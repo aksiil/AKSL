@@ -71,10 +71,10 @@ RunAKSL:write([[
 cd $HOME/AKSL
 token="]]..database:get(Server_AKSL.."Token_AKSL")..[["
 rm -fr TRND.lua
-wget "https://raw.githubusercontent.com/aksiil/AKSL/master/TRND.lua"
+wget "https://raw.githubusercontent.com/aksiil/AKSL/master/AKSL.lua"
 while(true) do
 rm -fr ../.telegram-cli
-./tg -s ./TRND.lua -p PROFILE --bot=$token
+./tg -s ./AKSL.lua -p PROFILE --bot=$token
 done
 ]])
 RunAKSL:close()
